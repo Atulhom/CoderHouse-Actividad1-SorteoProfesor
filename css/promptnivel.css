@@ -1,33 +1,38 @@
 #prompt-overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
   
-  #prompt-box {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 5px;
-  }
+ #prompt-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   
-  #prompt-box label {
-    display: block;
-    margin-bottom: 10px;
-  }
+#prompt-box label {
+  display: block;
+  margin-bottom: 10px;
+}
   
-  #prompt-box input {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
-  }
+#prompt-box input {
+  width: calc(100% - 30px);
+  padding: 15px;
+  margin-bottom: 10px;
+}
   
-  #prompt-box button {
-    padding: 10px 15px;
-    margin-left: auto;
-  }
+#prompt-box button {
+  width: 100%;
+  padding: 10px 15px;
+  margin-left: auto;
+}

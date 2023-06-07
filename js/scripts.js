@@ -22,7 +22,7 @@ function init(){
     overlay.style.display = "flex";
 }
 
-//init();
+init();
 
 
 // Variables del sorteo
