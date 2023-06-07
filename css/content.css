@@ -1,0 +1,14 @@
+.main{
+    flex: 100%;
+    background-color: var(--color-gray-light);
+    padding: 40px;
+    border: 1px solid black;
+}
+
+.row{
+    display: flex;
+    flex: wrap;
+}
+
+
+

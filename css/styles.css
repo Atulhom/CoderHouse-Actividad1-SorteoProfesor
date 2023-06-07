@@ -1,0 +1,44 @@
+@import "header.css";
+@import "colors.css";
+@import "navbar.css";
+@import "content.css";
+@import "promptnivel.css";
+@import "footer.css";
+@import "sorteo.css";
+
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* CAPACIDAD PARA SIZES PEQUEÑAS, MODIFICA NAVBAR HACIA ABAJO */
+@media screen and (max-width: 700px) {
+    .navbar, .row {
+        flex-direction: column;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif';
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+img{
+    border-radius: 15px;
+}
+
+hr {
+    padding: 1px;
+    background-color: black;
+    border-color: var(--color-primary-dark);
+}

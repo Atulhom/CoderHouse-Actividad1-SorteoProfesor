@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+
+<header>
+    <div>
+        <img src="./imgs/js.png" alt="" srcset="">
+        <h1>JavaScript</h1>
+        <p>Aprendiendo JavaScript</p>
+    </div>
+</header>
+
+<!-- Empezando el navbar -->
+<body>
+    <nav class="navbar">
+        <a href="#">Cursos</a>
+        <a href="#">Descuentos</a>
+        <a href="#">Chat</a>
+    </nav>
+
+<!-- Definiendo propiedades CSS/Sorteo -->
+     <div class="row">
+            <section class="main">
+                <div class="form">
+                    <hr>
+                    <hr>
+                    <fieldset>
+                        <h1>Sorteo de cursos:</h1>
+                        <form>
+                            <div>
+                                <label for="participante">Nombre del participante:
+                                    <input type="text" id="participante" required placerholder="Escribe tu nombre.." >
+                                </label>
+                            </div>
+                            <div>
+                                <label for="maestro">Maestro seleccionado:
+                                    <input type="text" placeholder="Cristian Cabrera" id="maestro" readonly>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="pais">De donde eres?
+                                    <input type="text" placeholder="Eres de?" id="pais">
+                                </label>
+                            </div>
+                        </form>
+                        
+                    <button onclick="realizarSorteo()">Realizar Sorteo</button>
+                    <p id="resultado"></p>
+                    </fieldset>
+
+                    <hr>
+                    <hr>
+                
+
+             </section>
+        </div>
+
+<!-- fin de pagina-->
+    <footer>
+        <p>Joan Guasch Duran de <a href="https://plataforma-login.coderhouse.com/" style="color: aqua;", target="_blank">CoderHouse</a></p>
+    </footer>
+
+
+<!-- entrada a la pagina con un prompt-->
+     <div id="prompt-overlay">
+        <div id="prompt-box">
+          <label for="prompt-input">Estas interesado en aprender JavaScript:</label>
+          <input type="text" id="prompt-input" />
+          <button id="prompt-button">Aceptar</button>
+        </div>
+      </div>
+   
+      <script src="js/scripts.js"></script>
+    
+</body>
+</html>
