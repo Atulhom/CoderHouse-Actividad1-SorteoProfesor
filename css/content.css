@@ -1,14 +1,20 @@
-.main{
-    flex: 100%;
-    background-color: var(--color-gray-light);
-    padding: 40px;
-    border: 1px solid black;
-}
 
 .row{
     display: flex;
-    flex: wrap;
 }
 
+.flex-center{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* CAPACIDAD PARA SIZES PEQUEÑAS, MODIFICA NAVBAR HACIA ABAJO */
+@media screen and (max-width: 700px) {
+    .navbar, .row {
+        flex-direction: column;
+    }
+}
 
 

@@ -3,7 +3,7 @@ footer {
     text-align: center;
     background-color: var(--color-primary-dark);
     color: var(--color-gray-light);
-
+    margin-top: 32px;
 }
 
 p a {

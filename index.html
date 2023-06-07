@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descuentos</title>
     <link rel="stylesheet" href="./css/styles.css">
-    
 </head>
 
 <header>
@@ -26,41 +25,29 @@
     </nav>
 
 <!-- Definiendo propiedades CSS/Sorteo -->
-     <div class="row">
-            <section class="main">
-                <div class="form">
-                    <hr>
-                    <hr>
-                    <fieldset>
-                        <h1>Sorteo de cursos:</h1>
-                        <form>
-                            <div>
-                                <label for="participante">Nombre del participante:
-                                    <input type="text" id="participante" required placerholder="Escribe tu nombre.." >
-                                </label>
-                            </div>
-                            <div>
-                                <label for="maestro">Maestro seleccionado:
-                                    <input type="text" placeholder="Cristian Cabrera" id="maestro" readonly>
-                                </label>
-                            </div>
-                            <div>
-                                <label for="pais">De donde eres?
-                                    <input type="text" placeholder="Eres de?" id="pais">
-                                </label>
-                            </div>
-                        </form>
+    <div class="row flex-center">    
+        <div class="form-container">      
+            <h1>Sorteo de cursos:</h1>
+            <form>
+                          
+                <label for="participante">Nombre del participante:
+                     <input type="text" id="participante" required placeholder="Introduce tu nombre.."/>
+                 </label>
+                          
+                <label for="maestro">Maestro seleccionado:
+                    <input type="text" value="Cristian Cabrera" id="maestro" readonly>
+                </label>
                         
-                    <button onclick="realizarSorteo()">Realizar Sorteo</button>
-                    <p id="resultado"></p>
-                    </fieldset>
+                <label for="pais">¿En qué pais vivies?
+                        <input type="text" placeholder="Introduce tu país de residencia" id="pais" required>
+                 </label>
 
-                    <hr>
-                    <hr>
-                
-
-             </section>
+                <button onclick="realizarSorteo()">Realizar Sorteo</button>
+                           
+            </form>
+            <p id="resultado"></p>      
         </div>
+    </div>
 
 <!-- fin de pagina-->
     <footer>
@@ -69,13 +56,13 @@
 
 
 <!-- entrada a la pagina con un prompt-->
-     <div id="prompt-overlay">
+<!--      <div id="prompt-overlay">
         <div id="prompt-box">
           <label for="prompt-input">Estas interesado en aprender JavaScript:</label>
           <input type="text" id="prompt-input" />
           <button id="prompt-button">Aceptar</button>
         </div>
-      </div>
+      </div> -->
    
       <script src="js/scripts.js"></script>
     

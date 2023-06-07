@@ -1,34 +1,56 @@
 label{
+    display: block;
     font-family: 'arial';
     font-weight: bold;
 }
-.form{
-    width: 550px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-input{
-    width: 200px;
-    margin-bottom: 10px;
-    padding: 10px;
-    margin-right: -6px;
-    background-color: #fdfef7;
-    border: #173441 1.8px solid;
-}
-fieldset{
+
+.form-container{
+    width: 500px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 16px;
     border: #173441 2px solid;
     border-radius: 10px;
     background-color: #bed2dd;
 }
+
+@media screen and (max-width: 700px) {
+    .form-container {
+       width: 80%;
+    }
+}
+
+form{
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+input{
+    width: calc(100% - 20px);
+    display: block;
+    margin-top: 8px;
+    padding: 10px;;
+    background-color: #fdfef7;
+    border: #173441 1.8px solid;
+    border-radius: 8px;;
+}
+
+fieldset{
+    border: none;
+}
+
 button{
     background-color: #fdfef7;
     border: #173441 1.8px solid;
-    width: 100px;
+    width: 200px;
     font-family: 'arial';
-    font-size: 15px;  
-    border-radius: 2px;
+    font-size: 16px;  
     padding: 10px;
-    margin-left:77%;
+    border-radius: 8px;
+    margin: 0 auto;
 }
 
 .tab{
@@ -40,19 +62,23 @@ button{
     margin: 0 auto;
     width: 500px;
 }
+
 thead{
     border: #173441 2px solid;
     font-weight: bold;
 }
+
 tr{
     border: #173441 2px solid;
 }
+
 td{
     border: #173441 2px solid;    
 }
 
 #resultado {
-    color: var(--color-primary);;
     text-decoration: dashed;
     font-size: 25px;
+    text-align: center;
+    width: 100%;
 }
