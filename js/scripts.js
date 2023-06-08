@@ -26,7 +26,7 @@ init();
 
 
 // Variables del sorteo
-function realizarSorteo() {
+function realizarSorteo(event) {
   let premio = ["JavaScript", "HTML", "CSS", "React", "GitHub"];
   let ganadores = [];
 
@@ -57,6 +57,9 @@ function realizarSorteo() {
     resultado.textContent = "Escribe los campos correctamente.";
     resultado.style.color = "red";
   }
+
+  event.preventDefault();
+  
 }
 
 
