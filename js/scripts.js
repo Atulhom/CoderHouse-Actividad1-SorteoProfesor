@@ -26,37 +26,37 @@ init();
 
 
 // Variables del sorteo
-function realizarSorteo(){
-    var premio = ["JavaScript", "HTML", "CSS", "React", "GitHub"]
-    var ganadores = [];
+function realizarSorteo() {
+  let premio = ["JavaScript", "HTML", "CSS", "React", "GitHub"];
+  let ganadores = [];
 
-    var participante = document.getElementById("participante");
-    var participante = participante.value;
-    var pais = document.getElementById("pais");
-    var pais = pais.value;
+  let participanteInput = document.getElementById("participante");
+  let participante = participanteInput.value;
+  let paisInput = document.getElementById("pais");
+  let pais = paisInput.value;
 
-    var paisesReales = ["argentina", "brasil", "canadá", "colombia", "españa", "estados unidos", "francia", "italia", "mexico", "peru"];
+  let paisesReales = ["argentina", "brasil", "canadá", "colombia", "españa", "estados unidos", "francia", "italia", "mexico", "peru"];
 
-    // Ejecuta una array aleatoria.
-    for (var i = 0; i < 1; i++) {
-      var indiceGanador = Math.floor(Math.random() * premio.length);
-      var ganador = premio[indiceGanador];
-      ganadores.push(ganador);
-      premio.splice(indiceGanador, 1);
-    }
+  // Ejecuta una array aleatoria.
+  for (let i = 0; i < 1; i++) {
+    let indiceGanador = Math.floor(Math.random() * premio.length);
+    let ganador = premio[indiceGanador];
+    ganadores.push(ganador);
+    premio.splice(indiceGanador, 1);
+  }
 
-    // Muestra el resultado de persona en curso.
-    var resultado = document.getElementById("resultado");
-    if (paisesReales.includes(pais.toLowerCase()) && participante) {
-      resultado.textContent = "¡El curso ganado es: " + ganadores.join(", ") + "! " + "para " + participante + " que es de " + pais;
-      resultado.style.color = "greend"
-    } else if (participante && !paisesReales.includes(pais)) {
-      resultado.textContent = "Escribe bien el nombre de tu país.";
-      resultado.style.color = "red";
-    } else {
-      resultado.textContent = "Escribe los campos correctamente.";
-      resultado.style.color = "red";
-    }
+  // Muestra el resultado de persona en curso.
+  let resultado = document.getElementById("resultado");
+  if (paisesReales.includes(pais.toLowerCase()) && participante) {
+    resultado.textContent = "¡El curso ganado es: " + ganadores.join(", ") + "! " + "para " + participante + " que es de " + pais;
+    resultado.style.color = "green";
+  } else if (participante && !paisesReales.includes(pais)) {
+    resultado.textContent = "Escribe bien el nombre de tu país.";
+    resultado.style.color = "red";
+  } else {
+    resultado.textContent = "Escribe los campos correctamente.";
+    resultado.style.color = "red";
+  }
 }
 
 
